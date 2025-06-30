@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us – AquaEco World</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eaf9fb;
+      color: #034;
+    }
+
+    .header {
+      background-color: #0077b6;
+      color: white;
+      padding: 60px 20px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .video-box {
+      max-height: 500px;
+      overflow: hidden;
+    }
+
+    .video-box video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .values i {
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
+
+    .vision-box {
+      background-color: #caf0f8;
+      border-left: 5px solid #0077b6;
+      padding: 30px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌊 Header -->
+  <div class="header">
+    <h1>About AquaEco World</h1>
+    <p class="lead">Your gateway to marine conservation, education & unforgettable adventures.</p>
+  </div>
+
+  <!-- 🎥 Underwater Video -->
+  <div class="video-box">
+    <video autoplay muted loop>
+      <source src="https://www.shutterstock.com/shutterstock/videos/1106574429/preview/stock-footage-underwater-of-a-woman-snorkeling-above-a-coral-reef-girl-in-snorkeling-mask-dive-underwater-with.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- 🔍 Our Mission -->
+  <div class="container my-5">
+    <h2 class="section-title">🌟 Our Mission</h2>
+    <p class="text-center">AquaEco World is more than just an aquarium website — it’s a movement to raise awareness about ocean life, promote sustainability, and connect people to marine ecosystems through interactive features, bookings, adoption, and quizzes.</p>
+  </div>
+
+  <!-- 💡 What We Offer -->
+  <div class="container my-5">
+    <h2 class="section-title">💡 What We Offer</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 text-center p-3 bg-white">
+          <i class="bi bi-people-fill fs-1 text-primary mb-2"></i>
+          <h5>Interactive Experiences</h5>
+          <p>Book activities like underwater dining, scuba diving, and feeding shows for real-life or virtual fun.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-3 bg-white">
+          <i class="bi bi-heart-fill fs-1 text-danger mb-2"></i>
+          <h5>Adopt Sea Creatures</h5>
+          <p>Symbolically adopt marine animals, support their care, and get digital certificates.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-3 bg-white">
+          <i class="bi bi-mortarboard-fill fs-1 text-info mb-2"></i>
+          <h5>Learn with Quizzes</h5>
+          <p>Test and grow your marine knowledge with engaging quizzes for all age groups.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧭 Our Values -->
+  <div class="container my-5">
+    <h2 class="section-title">🧭 Our Values</h2>
+    <div class="row text-center values">
+      <div class="col-md-3 mb-4">
+        <i class="bi bi-globe"></i>
+        <h6>Conservation</h6>
+        <p>Protecting ocean habitats through education and awareness.</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="bi bi-lightbulb-fill"></i>
+        <h6>Innovation</h6>
+        <p>Using digital tools to make marine learning exciting and impactful.</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="bi bi-emoji-smile-fill"></i>
+        <h6>Engagement</h6>
+        <p>Creating joyful experiences for all ages to connect with ocean life.</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <i class="bi bi-tree-fill"></i>
+        <h6>Sustainability</h6>
+        <p>Promoting actions that support a healthy marine ecosystem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 👁️ Our Vision -->
+  <div class="container">
+    <div class="vision-box">
+      <h4>🌅 Our Vision</h4>
+      <p>To become a global leader in marine awareness by blending education, entertainment, and digital exploration. We believe everyone should have access to the wonders of the underwater world and feel inspired to protect it.</p>
+    </div>
+  </div>
+
+  <!-- 🧠 Fun Fact -->
+  <div class="container mt-5">
+    <h5 class="text-center mb-3">🐠 Click below for a random marine fact!</h5>
+    <div class="text-center">
+      <button onclick="showFact()" class="btn btn-outline-info">Show Me a Fun Fact</button>
+      <p id="factBox" class="mt-3 fw-bold text-primary"></p>
+    </div>
+  </div>
+
+  <script>
+    const facts = [
+      "Octopuses have three hearts and blue blood!",
+      "Sea turtles have been around for over 100 million years.",
+      "Clownfish can change their gender!",
+      "Jellyfish have no brains, hearts, or bones.",
+      "Some fish use bioluminescence to glow in the dark ocean depths."
+    ];
+
+    function showFact() {
+      const random = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById("factBox").textContent = random;
+    }
+  </script>
+
+  <footer class="bg-dark text-light text-center p-4 mt-5">
+    <p class="mb-0">© 2025 AquaEco World – Explore. Learn. Adopt. Build.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

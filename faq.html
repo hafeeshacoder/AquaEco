@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaEco World FAQ</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+      font-family: 'Segoe UI', sans-serif;
+      color: #034f75;
+      padding: 50px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .accordion-button {
+      background: #b2ebf2;
+      color: #004d40;
+      font-weight: 600;
+    }
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+    .accordion-item {
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #006064;
+      margin-top: 60px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌊 AquaEco World - FAQ</h1>
+
+    <!-- 🧠 Quiz Section -->
+    <div class="section-title">🧠 Quiz Challenge</div>
+    <div class="accordion" id="quizFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true">
+            What is the AquaEco Quiz?
+          </button>
+        </h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#quizFAQ">
+          <div class="accordion-body">
+            The AquaEco Quiz is a fun, timed challenge with 10 marine-themed MCQs. Score well to earn amazing discounts on AquaEco experiences!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+            What rewards do I get?
+          </button>
+        </h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#quizFAQ">
+          <div class="accordion-body">
+            Score 10/10 for 50% off, 8-9 for 30% off, 5-7 for 10% off. Below 5? Try again next time!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🐢 Adoption Section -->
+    <div class="section-title">🐢 Adopt-a-Sea-Creature</div>
+    <div class="accordion" id="adoptFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+            What is adoption in AquaEco?
+          </button>
+        </h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#adoptFAQ">
+          <div class="accordion-body">
+            Symbolically adopt marine life to support conservation. You get digital certificates and updates on your creature!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🐠 Aquarium Visitation Section -->
+    <div class="section-title">🐠 Aquarium Visitation</div>
+    <div class="accordion" id="aquaVisitFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q4">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+            Can I visit the underwater aquarium?
+          </button>
+        </h2>
+        <div id="a4" class="accordion-collapse collapse" data-bs-parent="#aquaVisitFAQ">
+          <div class="accordion-body">
+            Yes! Explore diverse marine habitats and creatures in our state-of-the-art underwater glass tunnels.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🏨 Suit Room Section -->
+    <div class="section-title">🏨 Underwater Suit Room</div>
+    <div class="accordion" id="suitFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q5">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a5">
+            Are the underwater suits real hotel rooms?
+          </button>
+        </h2>
+        <div id="a5" class="accordion-collapse collapse" data-bs-parent="#suitFAQ">
+          <div class="accordion-body">
+            Yes, stay overnight with panoramic views of marine life swimming around you. Truly a magical experience!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🤿 Scuba Diving Section -->
+    <div class="section-title">🤿 Scuba Diving Adventures</div>
+    <div class="accordion" id="scubaFAQ">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q6">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a6">
+            Is scuba diving available for beginners?
+          </button>
+        </h2>
+        <div id="a6" class="accordion-collapse collapse" data-bs-parent="#scubaFAQ">
+          <div class="accordion-body">
+            Absolutely! We provide certified instructors and beginner-friendly sessions for a safe and thrilling dive.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- summary.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donation Summary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+  <div class="container py-5">
+    <h2 class="text-center text-success mb-4">🎉 Donation Summary</h2>
+    <div id="summaryCard" class="card shadow-lg p-4 text-center"></div>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem("donationData"));
+
+    if (data) {
+      document.getElementById("summaryCard").innerHTML = `
+        <h4 class="text-primary">Thank You, <strong>${data.name}</strong>!</h4>
+        <p>You have adopted a <strong>${data.pet}</strong>.</p>
+        <p>Donation Amount: <strong>₹${data.amount}</strong></p>
+        <a href="adopt.html" class="btn btn-outline-primary mt-3">Adopt Another</a>
+      `;
+    } else {
+      document.getElementById("summaryCard").innerHTML = `
+        <p class="text-danger">No donation data found. Please go back and fill the form.</p>
+        <a href="adopt.html" class="btn btn-danger">Back to Form</a>
+      `;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adopt a Sea Friend | AquaEco World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #e0f7fa, #e0f2f1);
+      font-family: 'Segoe UI', sans-serif;
+      color: #034f75;
+    }
+
+    .header-video {
+      position: relative;
+      height: 60vh;
+      overflow: hidden;
+    }
+
+    .header-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    .header-text h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .header-text p {
+      font-size: 1.25rem;
+    }
+
+    table {
+      margin: 30px auto;
+      width: 95%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      text-align: center;
+      padding: 15px;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f0fcff;
+    }
+
+    .sea-img {
+      width: 120px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .sea-img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #0077b6;
+    }
+
+    footer {
+      background-color: #004d73;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Header Video Section -->
+  <div class="header-video">
+    <video autoplay muted loop playsinline>
+      <source src="https://www.shutterstock.com/shutterstock/videos/1072238279/preview/stock-footage-turtles-crawling-down-sand-beach-toward-sea-water-summer-family-new-beginning-life-swim-ocean.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="header-text">
+      <h1>Adopt Your Favorite Sea Friend</h1>
+      <p>Click on the pet image to learn more from Google!</p>
+    </div>
+  </div>
+
+ 
+  
+
+  <!-- 🐠 Sea Pets Table -->
+  <div class="container table-container">
+    <div class="table-responsive">
+      <table class="table table-bordered text-center align-middle">
+        <thead>
+          <tr>
+            <th>Pet</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Fun Fact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://www.google.com/search?q=Clownfish" target="_blank">
+                <img src="data:image/webp;base64,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" alt="Clownfish" class="sea-img">
+              </a>
+            </td>
+            <td>Clownfish</td>
+            <td>Tropical Fish</td>
+            <td>Known for its bright colors and symbiotic life with sea anemones.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.google.com/search?q=Sea+Turtle" target="_blank">
+                <img src="https://files.worldwildlife.org/wwfcmsprod/images/Sea_Turtle_Hol_Chan_Marine_Reserve_WW1105958/story_full_width/11e3bxo822_Sea_Turtle_Hol_Chan_Marine_Reserve_WW1105958.jpg" alt="Sea Turtle" class="sea-img">
+              </a>
+            </td>
+            <td>Sea Turtle</td>
+            <td>Marine Reptile</td>
+            <td>Can live over 100 years and travel thousands of miles!</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.google.com/search?q=Blue+Tang+Fish" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5RLwTTjFIp4jyfNL2B0RnQqK-xcc08_cqKOAOxqMMbM-q_GEVMrwOwkp0VsFZcW7F2J004kTcmHp1Ihz4pDNL-FlWFKBu4DjtGFUyw" alt="Blue Tang" class="sea-img">
+              </a>
+            </td>
+            <td>Blue Tang</td>
+            <td>Coral Fish</td>
+            <td>Famous for its role as "Dory" in Finding Nemo.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.google.com/search?q=Seahorse" target="_blank">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREn7c_DX1hzA9shK3OKlwgWfzBn-UZ1iD21ynFkx1S9fLgmWntEK_j8wmxz87eqTrGjLa5kfzU2HdLTRCP9DxOUw" alt="Seahorse" class="sea-img">
+              </a>
+            </td>
+            <td>Seahorse</td>
+            <td>Marine Fish</td>
+            <td>Males carry the babies in their pouch until birth.</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.google.com/search?q=Starfish" target="_blank">
+                <img src="https://www.thoughtco.com/thmb/PHXqLrrhvo1wVZGne0ddMCef9E0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/close-up-of-orange-starfish-on-sand-489010151-59847f7f22fa3a0010518acc.jpg" alt="Starfish" class="sea-img">
+              </a>
+            </td>
+            <td>Starfish</td>
+            <td>Echinoderm</td>
+            <td>Can regenerate lost arms — some even grow into a full star!</td>
+          </tr>
+		  <tr>
+  
+<tr>
+  <td><a href="https://www.google.com/search?q=Octopus" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSip6gxJqf-UAvo1C_-Bs1pyJXDIfRQdOG72Q&s" alt="Octopus" class="sea-img"></a></td>
+  <td>Octopus</td><td>Cephalopod</td><td>Highly intelligent with 8 arms.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Jellyfish" target="_blank">
+  <img src="https://www.oceano.org/wp-content/uploads/2019/08/fish-1033538_1920.jpg" alt="Jellyfish" class="sea-img"></a></td>
+  <td>Jellyfish</td><td>Cnidarian</td><td>Have no brain but can sting.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Dolphin" target="_blank">
+  <img src="https://hips.hearstapps.com/hmg-prod/images/dolphin-in-aquarium-of-barcelona-royalty-free-image-133103067-1554755112.jpg?crop=1xw:1xh;center,top&resize=980:*
+" alt="Dolphin" class="sea-img"></a></td>
+  <td>Dolphin</td><td>Mammal</td><td>Social and intelligent marine mammal.</td>
+</tr>
+
+<tr>
+  <td><a href="https://www.google.com/search?q=Lionfish" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQN5OR76I_ihhjv6rNGVMX4XUQQyfmdsICkQ&s" alt="Lionfish" class="sea-img"></a></td>
+  <td>Lionfish</td><td>Venomous Fish</td><td>Has stunning venomous spines.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Moray+Eel" target="_blank">
+  <img src="https://www.aquariumofpacific.org/images/made_new/images-olc-20240208-KK-7307_600_q85.jpg" alt="Moray Eel" class="sea-img"></a></td>
+  <td>Moray Eel</td><td>Predatory Fish</td><td>Lurks in rocky crevices.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Sea+Urchin" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfvSOiGd4ubCcIuwAGtFebm14I07XCoXjQtg&s" alt="Sea Urchin" class="sea-img"></a></td>
+  <td>Sea Urchin</td><td>Echinoderm</td><td>Spiny and found on sea floor.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Angelfish" target="_blank">
+  <img src="https://intanaquariumfeeds.com/cdn/shop/articles/3d-colorful-fish-with-dark-background_23-2150721042.jpg?v=1715687210" alt="Angelfish" class="sea-img"></a></td>
+  <td>Angelfish</td><td>Reef Fish</td><td>Colorful and commonly found in coral reefs.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Pufferfish" target="_blank">
+  <img src="https://i.pinimg.com/736x/1b/87/28/1b872849f7f5a8805161ded89701b2ff.jpg" alt="Pufferfish" class="sea-img"></a></td>
+  <td>Pufferfish</td><td>Blowfish</td><td>Can inflate when threatened.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Nudibranch" target="_blank">
+  <img src="https://www.thesmilingseahorse.com/uploads/1/0/1/8/10183628/editor/dsc-2414.jpg?1620372831" alt="Nudibranch" class="sea-img"></a></td>
+  <td>Nudibranch</td><td>Sea Slug</td><td>Brightly colored sea slugs.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Crab" target="_blank">
+  <img src="https://cdn.pixabay.com/photo/2018/05/06/00/37/crustacean-3377646_1280.jpg" alt="Crab" class="sea-img"></a></td>
+  <td>Crab</td><td>Crustacean</td><td>Walks sideways and has pincers.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Shrimp" target="_blank">
+  <img src="https://media.istockphoto.com/id/157730475/photo/amano-dwarf-shrimp.jpg?s=612x612&w=0&k=20&c=K3uQRRLZz7PhD0hWiE5py8FSRPOY5ZiIyQGE0ZJbfJs=" alt="Shrimp" class="sea-img"></a></td>
+  <td>Shrimp</td><td>Crustacean</td><td>Small, fast swimmers of the sea.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Orca" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Orca_porpoising.jpg" alt="Orca" class="sea-img"></a></td>
+  <td>Orca</td><td>Marine Mammal</td><td>Top predator also known as killer whale.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Beluga+Whale" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLFGy26qbE4h89pJOcSYVXn2-YfTDQge2dOQ&s" alt="Beluga Whale" class="sea-img"></a></td>
+  <td>Beluga Whale</td><td>Marine Mammal</td><td>White whale known for vocal sounds.</td>
+</tr>
+<tr>
+  <td><a href="https://www.google.com/search?q=Sea+Cucumber" target="_blank">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9hYbwj0YD3fL60652DBKssT9ysEv0ce8bw&s" alt="Sea Cucumber" class="sea-img"></a></td>
+  <td>Sea Cucumber</td><td>Echinoderm</td><td>Cleans the sea floor.</td>
+</tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<center>
+<form id="donationForm">
+  <button type="submit" class="btn btn-primary">Submit & View Summary</button>
+</form>
+</center>
+<footer>
+    <p>© 2025 AquaEco World | Adopt and Save a Sea Life 🐠</p>
+  </footer>
+
+<script>
+  document.getElementById("donationForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    // You can collect and store form data here if needed
+
+    // Redirect to another page
+    window.location.href = "adopt1.html";
+  });
+</script>
+
+</body>
+</html>
